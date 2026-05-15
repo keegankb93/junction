@@ -13,7 +13,7 @@ module Junction
     end
 
     def tui_binary_name
-      "junction-tui-#{tui_platform}"
+      "junction-rust-tui-#{tui_platform}"
     end
 
     def tui_platform

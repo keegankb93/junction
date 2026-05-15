@@ -7,9 +7,9 @@ class TestJunction < Minitest::Test
     refute_nil ::Junction::VERSION
   end
 
-  def test_tui_binary_name_uses_junction_prefix
+  def test_tui_binary_name_uses_rust_prefix
     require "junction/platform"
 
-    assert_match(/\Ajunction-tui-/, Junction::Platform.tui_binary_name)
+    assert_match(/\Ajunction-rust-tui-/, Junction::Platform.tui_binary_name)
   end
 end
