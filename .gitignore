@@ -8,4 +8,4 @@
 /tmp/
 /.cache/
 *.gem
-/rust/target/
+/rust/src/target/

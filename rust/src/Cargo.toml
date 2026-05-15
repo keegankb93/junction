@@ -1,5 +1,5 @@
 [package]
-name = "src"
+name = "junction-rust-tui"
 version = "0.1.0"
 description = "Junction tui"
 authors = ["Keegankb93 <keegankb@gmail.com>"]

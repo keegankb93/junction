@@ -31,7 +31,7 @@ namespace :tui do
 
     FileUtils.mkdir_p(File.dirname(output))
 
-    Dir.chdir(File.join(__dir__, "rust")) do
+    Dir.chdir(File.join(__dir__, "rust", "src")) do
       sh cargo, "build", "--release", "--target-dir", target_dir
     end
 
