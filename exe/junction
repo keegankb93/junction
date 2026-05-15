@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require_relative "../lib/junction/platform"
+
+binary = Junction::Platform.tui_binary_path(root: File.expand_path("..", __dir__))
+
+unless File.executable?(binary)
+  abort "Missing executable TUI binary for #{Junction::Platform.tui_platform}: #{binary}"
+end
+
+exec(binary, *ARGV)
